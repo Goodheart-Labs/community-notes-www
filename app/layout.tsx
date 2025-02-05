@@ -1,19 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Parkinsans } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-});
-
-const displayFont = Parkinsans({
-  variable: "--font-display",
   subsets: ["latin"],
 });
 
@@ -30,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} antialiased bg-gradient-to-br from-slate-50 to-blue-50`}
+        className={`${geistSans.variable} antialiased bg-gradient-to-br from-slate-50 to-blue-50`}
       >
         {children}
       </body>

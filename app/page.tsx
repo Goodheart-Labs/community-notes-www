@@ -8,7 +8,7 @@ export default function Home() {
       <div className="grid grid-rows-[auto_1fr_auto] min-h-screen max-w-4xl mx-auto px-6 py-12 gap-12">
         {/* Header */}
         <header className="grid gap-6 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 font-display">
+          <h1 className="text-4xl sm:text-5xl font-bold text-slate-900">
             Community Notes Dataset
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
