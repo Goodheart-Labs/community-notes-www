@@ -1,5 +1,7 @@
 "use client";
 
+import { DocumentText, Information, Chart, ArrowDown } from "iconsax-react";
+
 export default function Home() {
   return (
     <div className="min-h-screen grid-background">
@@ -25,7 +27,13 @@ export default function Home() {
           {/* Description */}
           <div className="grid gap-6 text-slate-700">
             <section className="grid gap-4">
-              <h2 className="text-2xl font-semibold text-slate-900">
+              <h2 className="text-2xl font-semibold text-slate-900 flex items-center gap-2">
+                <Information
+                  size={24}
+                  variant="Bold"
+                  className="text-blue-600"
+                  color="currentColor"
+                />
                 About the Dataset
               </h2>
               <p>
@@ -38,7 +46,13 @@ export default function Home() {
             </section>
 
             <section className="grid gap-4">
-              <h2 className="text-2xl font-semibold text-slate-900">
+              <h2 className="text-2xl font-semibold text-slate-900 flex items-center gap-2">
+                <DocumentText
+                  size={24}
+                  variant="Bold"
+                  className="text-blue-600"
+                  color="currentColor"
+                />
                 Why We Built This
               </h2>
               <p>
@@ -52,7 +66,13 @@ export default function Home() {
             </section>
 
             <section className="grid gap-4">
-              <h2 className="text-2xl font-semibold text-slate-900">
+              <h2 className="text-2xl font-semibold text-slate-900 flex items-center gap-2">
+                <Chart
+                  size={24}
+                  variant="Bold"
+                  className="text-blue-600"
+                  color="currentColor"
+                />
                 Applications
               </h2>
               <p>
@@ -68,9 +88,10 @@ export default function Home() {
           {/* CTA Button */}
           <div className="grid justify-center">
             <button
-              className="px-8 py-4 text-white rounded-lg font-bold border-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:border-neutral-300"
+              className="px-8 py-4 text-white rounded-lg font-bold border-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:border-neutral-300 flex items-center gap-2"
               onClick={() => alert("Dataset coming soon!")}
             >
+              <ArrowDown size={24} variant="Bold" color="white" />
               Download Dataset
             </button>
           </div>
